@@ -26,3 +26,4 @@ window.title("Auto Pong")
 g = App(window)
 #window.config(bg='white')
 window.mainloop()
+#testing
