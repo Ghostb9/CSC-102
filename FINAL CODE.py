@@ -67,6 +67,51 @@ def champ():
     pygame.mixer.music.load("kanye.wav")
     pygame.mixer.music.play(-1)
 
+#Raise all Cups
+def raiseCups():
+    pwm_1.start(0)
+    duty = 2
+    while duty <=2:
+        pwm_1.ChangeDutyCycle(duty)
+        time.sleep(1)
+        duty= duty +1
+    pwm_1 .start(0)
+    pwm_2.start(0)
+    duty = 2
+    while duty <=2:
+        pwm_2.ChangeDutyCycle(duty)
+        time.sleep(1)
+        duty= duty +1
+    pwm_2 .start(0)
+    pwm_3.start(0)
+    duty = 2
+    while duty <=2:
+        pwm_3.ChangeDutyCycle(duty)
+        time.sleep(1)
+        duty= duty +1
+    pwm_3.start(0)
+    pwm_4.start(0)
+    duty = 2
+    while duty <=2:
+        pwm_4.ChangeDutyCycle(duty)
+        time.sleep(1)
+        duty= duty +1
+    pwm_4.start(0)
+    pwm_5.start(0)
+    duty = 2
+    while duty <=2:
+        pwm_5.ChangeDutyCycle(duty)
+        time.sleep(1)
+        duty= duty +1
+    pwm_5.start(0)
+    pwm_6.start(0)
+    duty = 2
+    while duty <=2:
+        pwm_6.ChangeDutyCycle(duty)
+        time.sleep(1)
+        duty= duty +1
+    pwm_6.start(0)
+    
 #Main play function
 def play():
     time.sleep(5)
@@ -298,6 +343,8 @@ b1 = tk.Button(f1,height = 10, width = 40, text="Play", command=play)
 b1.pack()
 b3 = tk.Button(f1,height = 10, width = 40, text="Rerack", command=go_to_second)
 b3.pack()
+b5 = tk.Button(f1,height = 10, width = 40, text="Raise Cups", command=raiseCups)
+b5.pack()
 b4 = tk.Button(f1,height = 10, width = 40, text="Music", command=go_to_third)
 b4.pack()
 
